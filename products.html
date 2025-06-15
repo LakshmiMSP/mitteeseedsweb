@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+	<head>
+		<title>MSP Mittee Seeds</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<meta name="viewport" content="user-scalable=no, width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui" />
+
+		<meta name="theme-color" content="#FCDB5A" />
+		<meta name="msapplication-navbutton-color" content="#FCDB5A" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="#FCDB5A" />
+
+		<!-- Favicons
+		================================================== -->
+	
+
+		<!-- Critical styles
+		================================================== -->
+		<link rel="stylesheet" href="css/critical.min.css" type="text/css">
+
+		<!-- Load google font
+		================================================== -->
+		<script type="text/javascript">
+			WebFontConfig = {
+				google: { families: [ 'Open+Sans:300,400,500,600,700,800', 'Raleway:100,400,400i,500,500i,700,700i,900'] }
+			};
+			(function() {
+				var wf = document.createElement('script');
+				wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+				wf.type = 'text/javascript';
+				wf.async = 'true';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(wf, s);
+			})();
+		</script>
+
+		<!-- Load other scripts
+		================================================== -->
+		<script type="text/javascript">
+			var _html = document.documentElement,
+				isTouch = (('ontouchstart' in _html) || (navigator.msMaxTouchPoints > 0) || (navigator.maxTouchPoints));
+
+			_html.className = _html.className.replace("no-js","js");
+			_html.classList.add( isTouch ? "touch" : "no-touch");
+		</script>
+		<script type="text/javascript" src="js/device.min.js"></script>
+	</head>
+
+	<body>
+		<div id="app">
+			<!-- start header -->
+			<header id="top-bar" class="top-bar top-bar--style-2">
+				<div class="top-bar__bg" style="background-color: #FFF;background-image: url(img/top_bar_bg-2.png);background-repeat: no-repeat;background-position: center bottom;"></div>
+
+				<div class="container-fluid position-relative">
+					<div class="row justify-content-between no-gutters">
+
+						<a class="top-bar__logo site-logo" href="index.html">
+							<img class="img-fluid" src="img/site_logo.png" alt="demo" />
+						</a>
+
+						<a id="top-bar__navigation-toggler" class="top-bar__navigation-toggler top-bar__navigation-toggler--dark" href="javascript:void(0);"><span></span></a>
+
+						<div id="top-bar__inner" class="top-bar__inner  text-lg-right">
+							<div>
+								<div class="d-lg-flex flex-lg-column-reverse align-items-lg-end">
+									<nav id="top-bar__navigation" class="top-bar__navigation navigation" role="navigation">
+										<ul>
+										<li>
+											<a href="index.html">Home</a>											
+										</li>
+										<li>
+											<a href="about.html">About</a>
+										</li>										
+										<li   class="active"><a href="products.html">Products</a></li>
+										
+										<li>
+											<a href="contacts.html">Contacts</a>
+										</li>
+										<li style="display: none" class="has-submenu">
+											<a href="javascript:void(0);">Pages</a>
+
+											<ul class="submenu">
+												
+												<li><a href="products_details.html">Product Details</a></li>
+												<li><a href="gallery_1.html">Gallery 1</a></li>
+												<li><a href="gallery_2.html">Gallery 2</a></li>
+												<li><a href="typography.html">Typography</a></li>
+												<li><a href="404.html">404 page</a></li>
+											</ul>
+										</li>
+										<li class="li-btn">
+											<a class="custom-btn custom-btn--small custom-btn--style-4" href="#">Get in Touch</a>
+										</li>
+									</ul>
+									</nav>
+
+									
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</header>
+			<!-- end header -->
+			<style>
+			@media (min-width: 992px) {
+				.top-bar__logo img {
+					height: 100px;
+				}
+			}
+			.top-bar--style-2 .top-bar__navigation a:not(.custom-btn){
+				font-size: 18px
+			}
+			</style>
+
+			
+
+			<!-- start main -->
+			<main role="main">
+				<!-- Common styles
+				================================================== -->
+				<link rel="stylesheet" href="css/style.min.css" type="text/css">
+
+				<!-- Load lazyLoad scripts
+				================================================== -->
+				<script>
+					(function(w, d){
+						var m = d.getElementsByTagName('main')[0],
+							s = d.createElement("script"),
+							v = !("IntersectionObserver" in w) ? "8.17.0" : "10.19.0",
+							o = {
+								elements_selector: ".lazy",
+								data_src: 'src',
+								data_srcset: 'srcset',
+								threshold: 500,
+								callback_enter: function (element) {
+
+								},
+								callback_load: function (element) {
+									element.removeAttribute('data-src')
+
+									oTimeout = setTimeout(function ()
+									{
+										clearTimeout(oTimeout);
+
+										AOS.refresh();
+									}, 1000);
+								},
+								callback_set: function (element) {
+
+								},
+								callback_error: function(element) {
+									element.src = "https://placeholdit.imgix.net/~text?txtsize=21&txt=Image%20not%20load&w=200&h=200";
+								}
+							};
+						s.type = 'text/javascript';
+						s.async = true; // This includes the script as async. See the "recipes" section for more information about async loading of LazyLoad.
+						s.src = "https://cdn.jsdelivr.net/npm/vanilla-lazyload@" + v + "/dist/lazyload.min.js";
+						m.appendChild(s);
+						// m.insertBefore(s, m.firstChild);
+						w.lazyLoadOptions = o;
+					}(window, document));
+				</script>
+				<style>
+				.prod-img img{
+					width: 100%
+				}
+				.table.table-bordered tr td{
+					border: 1px solid #ddd;
+					padding: 10px;
+					font-size: 18px;
+				}
+				.table.table-bordered tr:nth-child(odd) {
+				  background-color: #f9f9f8;
+				 
+				}
+				.mt50{
+					margin-top: 50px
+				}
+				.p-title{
+					background: #3b9b04; 
+					color: #fff; 
+					padding: 20px
+				}
+				.p-title h3{					
+					color: #fff;
+					    font-size: 22px;
+				}
+				</style>
+				<!-- start section -->
+				<section class="section section--no-pb ">
+					<div class="container">
+						<div class="p-title"><h3>Hybrid: Bajra</h3></div>
+						
+						<div class="row mt50">
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+							<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/bajra.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>
+										
+										<td><h4>Variant</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table>
+												<tr>
+													<td>MSB - 40</td>
+													<td>1.5KG</td>
+												</tr>
+												
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+						</div>
+							</div>
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+							<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/bajra.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>
+										
+										<td><h4>Variant</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table>
+												
+												<tr>
+													<td>MSB - 80</td>
+													<td>1.5KG</td>
+												</tr>
+												
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+						</div>
+							</div>
+							<div class="mt50 col-12 col-lg-6 col-xl-6">
+								<div class="row">
+							<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/bajra.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>
+										
+										<td><h4>Variant</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table>
+												
+												<tr>
+													<td>MSB - 120</td>
+													<td>1.5KG</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+						</div>
+							</div>
+							</div>
+							
+							
+							
+							
+							
+						<div class="mt50 p-title"><h3>Hybrid: Castor</h3></div>	
+							
+							
+							
+							
+							
+							
+							
+						<div class="row mt50">	
+							
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+							<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/castor.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>
+										
+										<td colspan="2"><h4>Variant</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>Anmol</td>
+										<td>1KG</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+							
+							
+						</div>
+							</div>
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+							<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/castor.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>
+										
+										<td colspan="2"><h4>Variant</h4></td>
+									</tr>
+									
+									<tr>										
+										
+										
+										<td>MS-Rasili</td>
+										<td>1KG</td>
+									</tr>
+								</table>
+							</div>
+							
+							
+							
+						</div>
+							</div>
+						</div>
+						
+						<div class="mt50 p-title"><h3>Hybrid: Jower</h3></div>
+						<div class="row mt50">
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+							<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/jowar.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>
+										
+										<td colspan="2"><h4>Variant</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>MSF - Ravali</td>
+										<td>5KG</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+							
+							
+						</div>
+							</div>
+							</div>
+							
+							
+							
+						<div class="mt50 p-title"><h3>Hybrid: Maize</h3></div>	
+						<div class="row">	
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row mt50">
+								<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/maize.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>
+										
+										<td colspan="2"><h4>Variant</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table>
+												<tr>
+													<td>MSM - 90</td>
+													<td>5KG</td>
+												</tr>
+												
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+							
+							</div>
+							</div>
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row mt50">
+								<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/maize.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>
+										
+										<td colspan="2"><h4>Variant</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table>
+												
+												<tr>
+													<td>MSM - Gold</td>
+													<td>4KG</td>
+												</tr>
+												
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+							
+							</div>
+							</div>
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row mt50">
+								<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/maize.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>
+										
+										<td colspan="2"><h4>Variant</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table>
+												
+												<tr>
+													<td>MSM - Titan</td>
+													<td>4KG</td>
+												</tr>
+												
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+							
+							</div>
+							</div>
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row mt50">
+								<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/maize.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>
+										
+										<td colspan="2"><h4>Variant</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table>
+												
+												<tr>
+													<td>MSM - Tysun</td>
+													<td>4KG</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+							
+							</div>
+							</div>
+						</div>
+						
+						<div class="p-title mt50"><h3>Hybrid: Paddy</h3></div>
+						<div class="row mt50">
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+									<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/paddy.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>
+										
+										<td colspan="2"><h4>Variant</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table>
+												<tr>
+													<td>MSP - 115</td>
+													<td>3, 6, 10 KG</td>
+												</tr>
+												
+												
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+								</div>
+							</div>
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+									<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/paddy.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>
+										
+										<td colspan="2"><h4>Variant</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table>
+												
+												<tr>
+													<td>MSP - 100</td>
+													<td>3, 6, 10 KG</td>
+												</tr>
+												
+												
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+								</div>
+							</div>
+							<div class="mt50 col-12 col-lg-6 col-xl-6">
+								<div class="row">
+									<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/paddy.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>
+										
+										<td colspan="2"><h4>Variant</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table>
+												
+												<tr>
+													<td>MSP - 125</td>
+													<td>3, 6, 10 KG</td>
+												</tr>
+												
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+								</div>
+							</div>
+							
+							</div>
+							
+							
+							
+							
+							<div class="p-title mt50"><h3>Hybrid: RedGram</h3></div>
+						<div class="row mt50">	
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+									<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/redgram.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>
+										
+										<td colspan="2"><h4>Variant</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table>
+												<tr>
+													<td>MSR - 30</td>
+													<td>1KG</td>
+												</tr>
+												
+												
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+								</div>
+							</div>
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+									<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/redgram.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>
+										
+										<td colspan="2"><h4>Variant</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table>
+												
+												<tr>
+													<td>MSR - 41</td>
+													<td>1KG</td>
+												</tr>
+												
+												
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+								</div>
+							</div>
+						</div>
+						
+						<div class="p-title mt50"><h3>Hybrid: Sunflower</h3></div>
+						<div class="row mt50">
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+									<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/sunflower.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>
+										
+										<td colspan="2"><h4>Variant</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table>
+												<tr>
+													<td>MSS - 86</td>
+													<td>2KG</td>
+												</tr>
+												
+												
+												
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+								</div>
+							</div>
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+									<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/sunflower.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>
+										
+										<td colspan="2"><h4>Variant</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table>
+												
+												<tr>
+													<td>MSS - 84</td>
+													<td>2KG</td>
+												</tr>
+												
+												
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+								</div>
+							</div>
+							</div>
+							
+							
+							<div class="p-title mt50"><h3>Hybrid: Wheet</h3></div>
+							<div class="row mt50">
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+									<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/wheet.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>
+										
+										<td colspan="2"><h4>Variant</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table>
+												<tr>
+													<td>MSW - 44</td>
+													<td>10, 20 KG</td>
+												</tr>
+												
+												
+												
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+								</div>
+							</div>
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+									<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/wheet.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>
+										
+										<td colspan="2"><h4>Variant</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table>
+												
+												<tr>
+													<td>MSS - 303</td>
+													<td>10, 20 KG</td>
+												</tr>
+												
+												
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+								</div>
+							</div>
+						</div>
+						
+						<div class="p-title mt50"><h3>LadyFinger: Bhendi</h3></div>
+						<div class="row mt50">
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+									<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/bhendi.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>
+										
+										<td colspan="3"><h4>Variant: MS-Anamika</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table>
+												<tr>
+													
+													<td>150Grams</td>
+													<td>10.25.50.100.250.500. And 1 KG</td>
+												</tr>
+																								
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+								</div>
+							</div>
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+									<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/bhendi.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>
+										
+										<td colspan="3"><h4>Variant: MS-Dark Green</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table>
+												
+												<tr>
+													
+													<td>150Grams</td>
+													<td>10.25.50.100.250.500. And 1 KG</td>
+												</tr>
+																							
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+								</div>
+							</div>
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+									<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/bhendi.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>
+										
+										<td colspan="3"><h4>Variant: MS-Roopa</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table>
+												
+												<tr>
+													
+													<td>150Grams</td>
+													<td>10.25.50.100.250.500. And 1 KG</td>
+												</tr>												
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+								</div>
+							</div>
+						</div>
+						
+						<div class="p-title mt50"><h3>Bitter Gourd</h3></div>
+					    <div class="row mt50">
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+									<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/gramlond.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>										
+										<td><h4>Variant: MS-Chandana	</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table width="100%">												
+												<tr>
+													
+													<td>150Grams</td>
+													<td>10.25.50.100.250.500. And 1 KG</td>
+												</tr>
+																							
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+								</div>
+							</div>
+						</div>
+						
+						
+						
+						
+						<div class="p-title mt50"><h3>Bitter Gourd: PSPL</h3></div>
+						<div class="row mt50">
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+									<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/gramlond.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>										
+										<td><h4>Variant: MS-Sindhu	</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table width="100%">												
+												<tr>
+													
+													<td>150Grams</td>
+													<td>10.25.50.100.250.500. And 1 KG</td>
+												</tr>
+																						
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+								</div>
+							</div>
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+									<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/gramlond.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>										
+										<td><h4>Variant: MS-Deepti	</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table width="100%">												
+
+												<tr>
+													
+													<td>150Grams</td>
+													<td>10.25.50.100.250.500. And 1 KG</td>
+												</tr>											
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+								</div>
+							</div>
+						</div>
+						
+						
+						
+						<div class="p-title mt50"><h3>Bringal</h3></div>
+						<div class="row mt50">
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+									<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/bringal.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>										
+										<td><h4>Variant: MS-Krishna	</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table width="100%">												
+												<tr>
+													
+													<td>150Grams</td>
+													<td>10.25.50.100.250.500. And 1 KG</td>
+												</tr>
+																							
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+								</div>
+							</div>
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+									<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/bringal-1.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>										
+										<td><h4>Variant: MS-Supriya	</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table width="100%">												
+												
+												<tr>
+													
+													<td>150Grams</td>
+													<td>10.25.50.100.250.500. And 1 KG</td>
+												</tr>											
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+								</div>
+							</div>
+						</div>
+						
+						
+						<div class="p-title mt50"><h3>DOLICHOS</h3></div>
+						<div class="row mt50">
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+									<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/dotchos.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>										
+										<td><h4>Variant: MS-Lakshimi	</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table width="100%">												
+												<tr>
+													
+													<td>150Grams</td>
+													<td>10.25.50.100.250.500. And 1 KG</td>
+												</tr>
+																							
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+								</div>
+							</div>
+							</div>
+							
+							
+							<div class="p-title mt50"><h3>Chilli</h3></div>
+							<div class="row mt50">
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+									<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/chilli.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>										
+										<td><h4>Variant: MS-Padma	</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table width="100%">												
+												<tr>
+													
+													<td>200Grams</td>
+													<td>10.25.50.100.250.500. And 1 KG</td>
+												</tr>
+																								
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+								</div>
+							</div>
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+									<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/chilli.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>										
+										<td><h4>Variant: MS-Green	</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table width="100%">												
+												
+												<tr>
+													
+													<td>200Grams</td>
+													<td>10.25.50.100.250.500. And 1 KG</td>
+												</tr>	
+																								
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+								</div>
+							</div>
+							</div>
+							
+							
+							<div class="row mt50">
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+									<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/chilli.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>										
+										<td><h4>Variant: MS-Hot	</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table width="100%">												
+													
+												<tr>
+													
+													<td>200Grams</td>
+													<td>10.25.50.100.250.500. And 1 KG</td>
+												</tr>
+																								
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+								</div>
+							</div>
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+									<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/chilli.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>										
+										<td><h4>Variant: MS-Red	</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table width="100%">												
+												
+												<tr>
+													
+													<td>200Grams</td>
+													<td>10.25.50.100.250.500. And 1 KG</td>
+												</tr>												
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+								</div>
+							</div>
+						</div>
+						
+						
+							<div class="p-title mt50"><h3>Cabbage</h3></div>
+						<div class="row mt50">
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+									<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/cabbage.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+							
+								<table class="table table-bordered">
+									<tr>										
+										<td><h4>Variant: MS-Bullet	</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table width="100%">												
+												<tr>
+													
+													<td>150Grams</td>
+													<td>10.25.50.100.250.500. And 1 KG</td>
+												</tr>
+																							
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+								</div>
+							</div>
+							</div>
+							
+							
+							
+							<div class="p-title mt50"><h3>Carrot</h3></div>
+							<div class="row mt50">
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+									<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/carrot.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>										
+										<td><h4>Variant: MS-Sweet	</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table width="100%">												
+												<tr>
+												
+													<td>150Grams</td>
+													<td>10.25.50.100.250.500. And 1 KG</td>
+												</tr>
+												
+																							
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+								</div>
+							</div>
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+									<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/carrot.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>										
+										<td><h4>Variant: MS-Long	</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table width="100%">												
+												
+												<tr>
+													
+													<td>150Grams</td>
+													<td>10.25.50.100.250.500. And 1 KG</td>
+												</tr>	
+																							
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+								</div>
+							</div>
+						</div>
+						
+						<div class="p-title mt50"><h3>Tamato</h3></div>
+						<div class="row mt50">
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+									<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/tomato.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>										
+										<td><h4>Variant: MS-Round	</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table width="100%">												
+												<tr>
+													
+													<td>150Grams</td>
+													<td>10.25.50.100.250.500. And 1 KG</td>
+												</tr>
+																									
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+								</div>
+							</div>
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+									<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/tomato.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>										
+										<td><h4>Variant: MS-Radha	</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table width="100%">												
+												
+													<tr>
+													
+													<td>150Grams</td>
+													<td>10.25.50.100.250.500. And 1 KG</td>
+												</tr>
+												
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+								</div>
+							</div>
+							</div>
+							
+							
+							<div class="row mt50">
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+									<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/tomato.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>										
+										<td><h4>Variant: MS-Devi	</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table width="100%">												
+												
+<tr>
+													
+													<td>150Grams</td>
+													<td>10.25.50.100.250.500. And 1 KG</td>
+												</tr>	
+	
+												
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+								</div>
+							</div>
+<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+									<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/tomato.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>										
+										<td><h4>Variant: MS-Priya	</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table width="100%">												
+													
+<tr>
+													
+													<td>150Grams</td>
+													<td>10.25.50.100.250.500. And 1 KG</td>
+												</tr>	
+												
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+								</div>
+							</div>
+							</div>
+							
+							
+							<div class="row mt50">
+							
+							<div class="col-12 col-lg-6 col-xl-6">
+								<div class="row">
+									<div class="col-12 col-lg-4 col-xl-4 prod-img">
+								<img src="img/tomato.jpg" />
+							</div>
+							<div class="col-12 col-lg-8 col-xl-8 prod-details">								
+								
+								<table class="table table-bordered">
+									<tr>										
+										<td><h4>Variant: MS-Aruna	</h4></td>
+									</tr>
+									<tr>										
+										
+										<td>
+											<table width="100%">												
+													
+<tr>
+													
+													<td>150Grams</td>
+													<td>10.25.50.100.250.500. And 1 KG</td>
+												</tr>												
+											</table>
+										</td>
+									</tr>
+									
+								</table>
+							</div>
+							
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</section>
+				<!-- end section -->
+
+				
+				
+				
+			</main>
+			<!-- end main -->
+
+			<!-- start footer -->
+			<footer id="footer" class="footer--style-1" style="margin-top:100px">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-sm-auto">
+							<div class="footer__item">
+								<a class="site-logo" href="index.html">
+									<img class="img-fluid  lazy" src="img/blank.gif" data-src="img/site_logo.png" alt="demo" />
+								</a>
+							</div>
+						</div>
+
+						<div class="col-12 col-sm">
+							<div class="row align-items-md-center no-gutters">
+								<div class="col-12 col-md">
+									<div class="footer__item">
+										<address>
+											<p>
+												P No-86 , Padmanagar Phase -2 , Quthbullapur, Hyderabad-500054
+											</p>
+
+											<p>
+												+91 954250650 <br>
+												<a href="mailto:info@mitteeseeds.com">info@mitteeseeds.com</a>
+											</p>
+										</address>
+									</div>
+								</div>
+
+								<div class="col-12 col-md-auto">
+									<div class="footer__item">
+										<div class="social-btns">
+											<a href="#"><i class="fontello-twitter"></i></a>
+											<a href="#"><i class="fontello-facebook"></i></a>
+											<a href="#"><i class="fontello-linkedin-squared"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						
+					</div>
+
+					<div class="row flex-lg-row-reverse">
+						
+
+						<div class="col-12 col-lg-12">
+							<div class="footer__item">
+								<span class="__copy">© 2024 MSP Mittee Seeds. All rights reserved.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- end footer -->
+		</div>
+
+		<div id="btn-to-top-wrap">
+			<a id="btn-to-top" class="circled" href="javascript:void(0);" data-visible-offset="800"></a>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/jquery-2.2.4.min.js"><\/script>')</script>
+
+		<script type="text/javascript" src="js/main.min.js"></script>
+		
+	</body>
+</html>
